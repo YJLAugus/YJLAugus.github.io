@@ -7,7 +7,9 @@ td, th {
     border-collapse: collapse;
     border-top: 1px solid #eee;
 }
-
+.main-container::-webkit-scrollbar {
+    display: none;
+}
 .main-container {
     overflow-x: auto !important;
 }
