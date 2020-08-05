@@ -83,7 +83,7 @@
     <link href="https://yjlaugus.github.io/2020/07/05/hello-world/"/>
     <id>https://yjlaugus.github.io/2020/07/05/hello-world/</id>
     <published>2020-07-05T08:18:01.439Z</published>
-    <updated>2020-01-20T10:00:04.933Z</updated>
+    <updated>2020-08-05T04:55:11.374Z</updated>
     
     <summary type="html">
     
@@ -91,7 +91,11 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          
+    &lt;div class=&quot;cplayer-template&quot;
+      id=&quot;cplayer-22436435&quot;
+      data-id=&quot;cplayer-22436435&quot;
+     
         
       
     
