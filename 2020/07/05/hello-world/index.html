@@ -61,8 +61,11 @@
     
 
     <div class="post-content">
-        <h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2>
-    <div class="cplayer-template" id="cplayer-03330612" data-id="cplayer-03330612" data-playlist="%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D" data-ids="[1344038671]" data-autoplay="true" style="position: relative"></div>
+        <div class="outdated-notify"></div>
+## Test
+
+
+    <div class="cplayer-template" id="cplayer-29238554" data-id="cplayer-29238554" data-playlist="%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D" data-ids="[1344038671]" data-autoplay="true" style="position: relative"></div>
     <script>
       (function(){
 
@@ -89,7 +92,7 @@
 
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
-          if (typeof window.cplayerList["cplayer-03330612"] !== 'undefined') return;
+          if (typeof window.cplayerList["cplayer-29238554"] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
             if (!id) throw new Error("Unable Property.");
             let lyric = await getLyric(id);
@@ -109,8 +112,8 @@
             }.bind(this))
           }
 
-          window.cplayerList["cplayer-03330612"] = new cplayer({
-            element: document.getElementById("cplayer-03330612"),
+          window.cplayerList["cplayer-29238554"] = new cplayer({
+            element: document.getElementById("cplayer-29238554"),
             playlist: [{"name":"loading...","artist":"loading..."}],
             generateBeforeElement: false,
             deleteElementAfterGenerate: false,
@@ -190,9 +193,9 @@
                     `
           });
 
-          window.cplayerList["cplayer-03330612"].add163(1344038671)
+          window.cplayerList["cplayer-29238554"].add163(1344038671)
 
-          let player = window.cplayerList["cplayer-03330612"]
+          let player = window.cplayerList["cplayer-29238554"]
           player.to(1)
           player.remove(player.playlist[0])
         }
@@ -278,7 +281,7 @@ void inthandler27(int *esp)
         <br>
         Made with <i class="fa fa-heart throb"
            style="color:#d43f57"></i> by <span class="author"
-              itemprop="copyrightHolder">journey.ad</span>.
+              itemprop="copyrightHolder">YJLAugus</span>.
         <label class="el-switch el-switch-green el-switch-sm"
                style="vertical-align: sub;">
             <input type="checkbox"

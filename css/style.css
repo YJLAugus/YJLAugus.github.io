@@ -1,6 +1,14 @@
 html {
   overscroll-behavior: none;
 }
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #fff !important;
+  text-shadow: none !important;
+}
+pre[class*="language-"].line-numbers {
+  padding-left: 5px !important;
+}
 body {
   background-color: #fff;
   color: #51525d;

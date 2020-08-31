@@ -62,7 +62,7 @@
 
     <div class="post-content">
         
-    <div class="cplayer-template" id="cplayer-36039660" data-id="cplayer-36039660" data-playlist="%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D" data-ids="[423058298]" data-autoplay="true" style="position: relative"></div>
+    <div class="cplayer-template" id="cplayer-14793613" data-id="cplayer-14793613" data-playlist="%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D" data-ids="[423058298]" data-autoplay="true" style="position: relative"></div>
     <script>
       (function(){
 
@@ -89,7 +89,7 @@
 
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
-          if (typeof window.cplayerList["cplayer-36039660"] !== 'undefined') return;
+          if (typeof window.cplayerList["cplayer-14793613"] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
             if (!id) throw new Error("Unable Property.");
             let lyric = await getLyric(id);
@@ -109,8 +109,8 @@
             }.bind(this))
           }
 
-          window.cplayerList["cplayer-36039660"] = new cplayer({
-            element: document.getElementById("cplayer-36039660"),
+          window.cplayerList["cplayer-14793613"] = new cplayer({
+            element: document.getElementById("cplayer-14793613"),
             playlist: [{"name":"loading...","artist":"loading..."}],
             generateBeforeElement: false,
             deleteElementAfterGenerate: false,
@@ -190,9 +190,9 @@
                     `
           });
 
-          window.cplayerList["cplayer-36039660"].add163(423058298)
+          window.cplayerList["cplayer-14793613"].add163(423058298)
 
-          let player = window.cplayerList["cplayer-36039660"]
+          let player = window.cplayerList["cplayer-14793613"]
           player.to(1)
           player.remove(player.playlist[0])
         }
@@ -263,7 +263,7 @@
         <br>
         Made with <i class="fa fa-heart throb"
            style="color:#d43f57"></i> by <span class="author"
-              itemprop="copyrightHolder">journey.ad</span>.
+              itemprop="copyrightHolder">YJLAugus</span>.
         <label class="el-switch el-switch-green el-switch-sm"
                style="vertical-align: sub;">
             <input type="checkbox"
