@@ -30,7 +30,7 @@
         
         
           
-    &lt;div class=&quot;cplayer-template&quot; id=&quot;cplayer-13940021&quot; data-id=&quot;cplayer-13940021&quot;
+    &lt;div class=&quot;cplayer-template&quot; id=&quot;cplayer-41044535&quot; data-id=&quot;cplayer-41044535&quot;
         
       
     
@@ -115,7 +115,7 @@
     <link href="https://yjlaugus.github.io/2020/07/05/hello-world/"/>
     <id>https://yjlaugus.github.io/2020/07/05/hello-world/</id>
     <published>2020-07-05T08:18:01.439Z</published>
-    <updated>2020-08-31T10:09:58.715Z</updated>
+    <updated>2020-08-31T10:38:37.669Z</updated>
     
     <summary type="html">
     
@@ -123,10 +123,11 @@
       
         
         
-          &lt;div class=&quot;outdated-notify&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;outdated-notify&quot;&gt;
+            本文发布于 &lt;span class=&quot;num&quot;&gt;-&lt;/span&gt; 天前，文中所描述的信息可能已发生改变或是过时，请注意辨别
+        &lt;/div&gt;
 
-&lt;h2 id=&quot;Test&quot;&gt;&lt;a href=&quot;#Test&quot; class=&quot;headerlink&quot; title=&quot;Test&quot;&gt;&lt;/a&gt;Test&lt;/h2&gt;
-    &lt;div
+&lt;h2 id=&quot;Test&quot;&gt;&lt;a
         
       
     
