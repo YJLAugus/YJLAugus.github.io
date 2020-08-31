@@ -17,3 +17,10 @@ td, th {
 table {
     overflow-x: auto !important;
 }
+@font-face {
+  font-family: "Zpix";
+  src: url("../fonts/zpix.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display： swap;
+}
