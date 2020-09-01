@@ -14,7 +14,7 @@ pre[class*="language-"].line-numbers {
   border: none !important;
 }
 .post-content code {
-  margin-right: 3px;
+  margin-right: 3px !important;
 }
 body {
   background-color: #fff;
