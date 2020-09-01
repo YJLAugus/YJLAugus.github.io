@@ -44,62 +44,46 @@
 <link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
-<body id="bodyx" path="categories/英语学习/index.html">
-    <div class="hd logodiv">
-    <img src="https://count.getloli.com/get/@yjlaugus-blog?theme=moebooru" class="logopng">
-    <p class="logot"><span class="logo_1">&lt;</span><span class="logo_2">/</span><span class="logo_3">#</span> <a href="/" title="他与她的梦">他与她的梦</a> <span class="logo_3">#</span><span class="logo_2">/</span><span class="logo_1">&gt;</span></p>
-</div>
-<div class="hd">
-    <ol class="breadcrumb">
-        
-            <li><a class="ba" href="/archives">归档</a></li>
-        
-            <li><a class="ba" href="/links">友链</a></li>
-        
-            <li><a class="ba" href="/about">关于</a></li>
-        
-            <li><a class="ba" href="https://github.com/YJLAugus" target="_blank" rel="noopener">Github</a></li>
-        
-    </ol>
-    <hr class="breadcrumbhr">
-</div>
-<div class="hd">
+<body id="bodyx" path="archives/note/assembly-memory-address-problem/">
+    <div class="hd posts">
+    <a class="back" href="javascript:void(0);" target="_self"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            汇编内存单元地址问题
+        </p>
+        <hr>
+    </div>
+
     
+        <div class="outdated-notify">
+            本文发布于 <span class="num">-</span> 天前，文中所描述的信息可能已发生改变或是过时，请注意辨别
+        </div>
     
-        
-        
-            <div class="titlex">
-                <p><span class="title-year">#</span>
-                    2020
-                </p>
-            </div>
-            
-        
-        <a class="flink" href="/archives/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/advanced-english-pronunciation/">
-            <div class="list">
-                <div class="postname">
-                    完美发音进阶课-连读技巧
-                </div>
-                <div class="posttime">
-                    July 15th
-                </div>
-            </div>
-        </a>
+
+    <div class="post-content">
+        <p>有一数据存放在内存20000H 单元中，现给定段地址为SA,若想用偏移地址寻到此单元。则SA应满足的条件是：最小为（），最大为（）。</p>
+<h3 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h3><p>最小为 1001H ，最大为 2000H。</p>
+<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><p>首先分析什么时候SA最大，什么时候SA最小。由下面的①式和②式可得，SA<sub>max</sub> 就是②式的结果，SA<sub>min</sub> 就是①式的结果。</p>
+<p>根据题意可得：</p>
+<p>① SA × 16 + FFFFH = 20000H</p>
+<p>② SA × 16 = 20000H</p>
+<p>为了 简单计算，我们先从简单计算的开始算起，先算②式。</p>
+<p><code>SA×16</code>因为我们都是用16进制进行的计算 也就是数向左移动一位（小数点不动），同样的道理，那么SA = SA × 16 ÷16  = 20000H ÷16，也就是20000H向右移动一位得 2000H。</p>
+<blockquote>
+<p>注意：千万不要以为这样算完就算是结束了，其实并没有。我们知道 <strong>段地址×16 必然是16的倍数</strong>。那么从这一小问来说 我们就需要验证20000H 是否是16的倍数（10H）的倍数。经过简单的计算时可以整除的。那么我们就可以认为我们计算的没有问题。</p>
+</blockquote>
+<p>接下来我们计算①式。SA × 16 = 20000H - FFFFH = 10001H。同理，向右移动一位是1000H。这时候问题来了 由①可得 10001H并不能被10H整除，而是10001H ÷ 10H = 1000H 余 1H。故最小地址应该大于1000H，明显得 1001H而不是1000H。我们可以进行检验 1001H 左移一位是10010H ，10010H可以被10H所整除。故答案正确。</p>
+
+    </div>
+
     
-        
-        
-        <a class="flink" href="/archives/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/30s-english-learning/">
-            <div class="list">
-                <div class="postname">
-                    30秒搞定所有英文连读
-                </div>
-                <div class="posttime">
-                    July 5th
-                </div>
-            </div>
-        </a>
+        <hr class="fhr">
+        <div id="vcomments"></div>
     
-    <a class="more" href="/archives">More >></a>
+
+    <script>
+        var pub_date = 1579493577000;
+    </script>
 </div>
     <div class="footer"
      id="footer">
