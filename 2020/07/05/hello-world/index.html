@@ -62,7 +62,7 @@
 
     <div class="post-content">
         <h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2>
-    <div class="cplayer-template" id="cplayer-60416384" data-id="cplayer-60416384" data-playlist="%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D" data-ids="[1344038671]" data-autoplay="true" style="position: relative"></div>
+    <div class="cplayer-template" id="cplayer-66675445" data-id="cplayer-66675445" data-playlist="%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D" data-ids="[1344038671]" data-autoplay="true" style="position: relative"></div>
     <script>
       (function(){
 
@@ -89,7 +89,7 @@
 
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
-          if (typeof window.cplayerList["cplayer-60416384"] !== 'undefined') return;
+          if (typeof window.cplayerList["cplayer-66675445"] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
             if (!id) throw new Error("Unable Property.");
             let lyric = await getLyric(id);
@@ -109,8 +109,8 @@
             }.bind(this))
           }
 
-          window.cplayerList["cplayer-60416384"] = new cplayer({
-            element: document.getElementById("cplayer-60416384"),
+          window.cplayerList["cplayer-66675445"] = new cplayer({
+            element: document.getElementById("cplayer-66675445"),
             playlist: [{"name":"loading...","artist":"loading..."}],
             generateBeforeElement: false,
             deleteElementAfterGenerate: false,
@@ -190,9 +190,9 @@
                     `
           });
 
-          window.cplayerList["cplayer-60416384"].add163(1344038671)
+          window.cplayerList["cplayer-66675445"].add163(1344038671)
 
-          let player = window.cplayerList["cplayer-60416384"]
+          let player = window.cplayerList["cplayer-66675445"]
           player.to(1)
           player.remove(player.playlist[0])
         }
@@ -352,6 +352,6 @@ void inthandler27(int *esp)
 
 </style>
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
