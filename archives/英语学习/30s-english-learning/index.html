@@ -44,12 +44,12 @@
 <link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
-<body id="bodyx" path="2020/01/20/内存单元地址问题/">
+<body id="bodyx" path="archives/英语学习/30s-english-learning/">
     <div class="hd posts">
     <a class="back" href="javascript:void(0);" target="_self"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
     <div class="post-title">
         <p>
-            汇编内存单元地址问题
+            30秒搞定所有英文连读
         </p>
         <hr>
     </div>
@@ -61,18 +61,52 @@
     
 
     <div class="post-content">
-        <p>有一数据存放在内存20000H 单元中，现给定段地址为SA,若想用偏移地址寻到此单元。则SA应满足的条件是：最小为（），最大为（）。</p>
-<h3 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h3><p>最小为 1001H ，最大为 2000H。</p>
-<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><p>首先分析什么时候SA最大，什么时候SA最小。由下面的①式和②式可得，SA<sub>max</sub> 就是②式的结果，SA<sub>min</sub> 就是①式的结果。</p>
-<p>根据题意可得：</p>
-<p>① SA × 16 + FFFFH = 20000H</p>
-<p>② SA × 16 = 20000H</p>
-<p>为了 简单计算，我们先从简单计算的开始算起，先算②式。</p>
-<p><code>SA×16</code>因为我们都是用16进制进行的计算 也就是数向左移动一位（小数点不动），同样的道理，那么SA = SA × 16 ÷16  = 20000H ÷16，也就是20000H向右移动一位得 2000H。</p>
-<blockquote>
-<p>注意：千万不要以为这样算完就算是结束了，其实并没有。我们知道 <strong>段地址×16 必然是16的倍数</strong>。那么从这一小问来说 我们就需要验证20000H 是否是16的倍数（10H）的倍数。经过简单的计算时可以整除的。那么我们就可以认为我们计算的没有问题。</p>
+        <p>配套视频: <a href="https://jsmov2.a.yximgs.com/upic/2020/07/05/20/BMjAyMDA3MDUyMDM5MDFfMjU4MTI3ODk5XzMxODExNjEwODIyXzFfMw==_b_Bff2c583aaa93f2b5bed887c1ad23e45d.mp4" target="_blank" rel="noopener">教学视频</a></p>
+<h3 id="r-元音"><a href="#r-元音" class="headerlink" title="r+元音"></a><code>r</code>+元音</h3><blockquote>
+<p>多读一个“若”</p>
 </blockquote>
-<p>接下来我们计算①式。SA × 16 = 20000H - FFFFH = 10001H。同理，向右移动一位是1000H。这时候问题来了 由①可得 10001H并不能被10H整除，而是10001H ÷ 10H = 1000H 余 1H。故最小地址应该大于1000H，明显得 1001H而不是1000H。我们可以进行检验 1001H 左移一位是10010H ，10010H可以被10H所整除。故答案正确。</p>
+<p>例：your eyes</p>
+<h3 id="l-元音"><a href="#l-元音" class="headerlink" title="l+元音"></a><code>l</code>+元音</h3><blockquote>
+<p>多读个“了”</p>
+</blockquote>
+<p>例：double of</p>
+<h3 id="t-元音"><a href="#t-元音" class="headerlink" title="t+元音"></a><code>t</code>+元音</h3><blockquote>
+<p>变成个“的”</p>
+</blockquote>
+<p>例：soit is</p>
+<h3 id="n-元音"><a href="#n-元音" class="headerlink" title="n+元音"></a><code>n</code>+元音</h3><blockquote>
+<p>多读个“呢”</p>
+</blockquote>
+<p>例： an apple</p>
+<h3 id="爆破音-辅音"><a href="#爆破音-辅音" class="headerlink" title="爆破音+辅音"></a>爆破音+辅音</h3><p>/p/, /b/, /t/, /d/, /k/, /g/ 为爆破音。</p>
+<blockquote>
+<p>空它一拍，不读了</p>
+</blockquote>
+<p>例：hel(p) me</p>
+<h3 id="相同辅音"><a href="#相同辅音" class="headerlink" title="相同辅音"></a>相同辅音</h3><blockquote>
+<p>读一个</p>
+</blockquote>
+<p>例：goo(d) day</p>
+<h3 id="i-元音"><a href="#i-元音" class="headerlink" title="/i/+元音"></a><code>/i/</code>+元音</h3><blockquote>
+<p>多读个<strong>/j/</strong></p>
+</blockquote>
+<p>例：say(j) it</p>
+<h3 id="W-元音"><a href="#W-元音" class="headerlink" title="/W/+元音"></a><code>/W/</code>+元音</h3><blockquote>
+<p>多读个/w/ (喔)</p>
+</blockquote>
+<p>例：do(w) it</p>
+<h3 id="t-y"><a href="#t-y" class="headerlink" title="t+y"></a><code>t</code>+<code>y</code></h3><blockquote>
+<p>变成/tʃ/</p>
+</blockquote>
+<p>例：Nice to meet you</p>
+<h3 id="d-y"><a href="#d-y" class="headerlink" title="d+y"></a><code>d</code>+<code>y</code></h3><blockquote>
+<p>变成/dʒ/</p>
+</blockquote>
+<p>例：could you</p>
+<h3 id="s-y"><a href="#s-y" class="headerlink" title="s+y"></a><code>s</code>+<code>y</code></h3><blockquote>
+<p>变成/ʃ/ （舒~）</p>
+</blockquote>
+<p>例：I miss you </p>
 
     </div>
 
@@ -82,7 +116,7 @@
     
 
     <script>
-        var pub_date = 1579493577000;
+        var pub_date = 1593922377000;
     </script>
 </div>
     <div class="footer"

@@ -177,7 +177,7 @@ $("#update_style").change(function () {
   }
 });
 
-if (pub_date && Date.now() - pub_date >= 90 * 24 * 60 * 60 * 1000) {
+if (/^\/archives\//.pub_date && Date.now() - pub_date >= 90 * 24 * 60 * 60 * 1000) {
   $('.outdated-notify .num').text(Math.floor((Date.now() - pub_date) / (24 * 60 * 60 * 1000)))
   $('.outdated-notify').show()
 }
