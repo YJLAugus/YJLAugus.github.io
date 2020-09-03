@@ -20,10 +20,11 @@
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
-    <title>
-        YJLAugus
-    </title>
+    <title>Hello World - YJLAugus</title>
     
+      
+<link rel="stylesheet" href="/css/style.css">
+
       
 <link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
 
@@ -32,9 +33,6 @@
 
       
 <link rel="stylesheet" href="/libs/zpix/zpix.css">
-
-      
-<link rel="stylesheet" href="/css/style.css">
 
       
 <script src="/js/theme.js"></script>
@@ -47,12 +45,8 @@
 <body id="bodyx" path="archives/test/hello-world/">
     <div class="hd posts">
     <a class="back" href="javascript:void(0);" target="_self"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
-    <div class="post-title">
-        <p>
-            Hello World
-        </p>
-        <hr>
-    </div>
+    <h1 class="post-title">Hello World</h1>
+    <hr>
 
     
         <div class="outdated-notify">
@@ -62,7 +56,7 @@
 
     <div class="post-content">
         <h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2>
-    <div class="cplayer-template" id="cplayer-97615046" data-id="cplayer-97615046" data-playlist="%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D" data-ids="[1344038671]" data-autoplay="true" style="position: relative"></div>
+    <div class="cplayer-template" id="cplayer-28849184" data-id="cplayer-28849184" data-playlist="%5B%7B%22name%22%3A%22loading...%22%2C%22artist%22%3A%22loading...%22%7D%5D" data-ids="[1344038671]" data-autoplay="true" style="position: relative"></div>
     <script>
       (function(){
 
@@ -89,7 +83,7 @@
 
         function loadcplayer() {
           if (typeof window.cplayerList === 'undefined') window.cplayerList = {};
-          if (typeof window.cplayerList["cplayer-97615046"] !== 'undefined') return;
+          if (typeof window.cplayerList["cplayer-28849184"] !== 'undefined') return;
           if (!cplayer.prototype.add163) cplayer.prototype.add163 = async function add163(id) {
             if (!id) throw new Error("Unable Property.");
             let lyric = await getLyric(id);
@@ -109,8 +103,8 @@
             }.bind(this))
           }
 
-          window.cplayerList["cplayer-97615046"] = new cplayer({
-            element: document.getElementById("cplayer-97615046"),
+          window.cplayerList["cplayer-28849184"] = new cplayer({
+            element: document.getElementById("cplayer-28849184"),
             playlist: [{"name":"loading...","artist":"loading..."}],
             generateBeforeElement: false,
             deleteElementAfterGenerate: false,
@@ -190,9 +184,9 @@
                     `
           });
 
-          window.cplayerList["cplayer-97615046"].add163(1344038671)
+          window.cplayerList["cplayer-28849184"].add163(1344038671)
 
-          let player = window.cplayerList["cplayer-97615046"]
+          let player = window.cplayerList["cplayer-28849184"]
           player.to(1)
           player.remove(player.playlist[0])
         }
@@ -274,7 +268,7 @@ void inthandler27(int *esp)
     <p>
         Copyright © 2020 <a class="flink"
            href="https://www.cnblogs.com/yjlaugus">YJLAugus</a> · Theme by <a class="flink"
-           href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+           href="https://github.com/journey-ad/hexo-theme-geek">Geek</a>.
         <br>
         Made with <i class="fa fa-heart throb"
            style="color:#d43f57"></i> by <span class="author"
@@ -292,6 +286,9 @@ void inthandler27(int *esp)
         </script> -->
     </p>
 </div>
+
+<a href="javascript:void(0);" class="back-to-top" target="_self"></a>
+
 <input type="hidden"
        id="web_style"
        value="white">

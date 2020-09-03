@@ -8,11 +8,11 @@
     return data
   }
 
-  function addStyle(styles) {
+  function addStyle(styles, id) {
 
     /* Create style element */
     var css = document.createElement('style');
-    css.id = 'theme'
+    css.id = id || 'theme'
     css.type = 'text/css';
 
     if (css.styleSheet)
@@ -50,5 +50,15 @@
     addStyle(white)
   } else if (getCookie("style") === "black") {
     addStyle(black)
+  }
+
+
+  var win = '\
+  body, .post-content {\
+    font-family: serif\
+  }\
+  '
+  if(/windows|win32/i.test(navigator.userAgent)){
+    addStyle(win, 'pixel-font-fix')
   }
 })();

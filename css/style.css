@@ -13,15 +13,12 @@ pre[class*="language-"].line-numbers {
 .post-content table th {
   border: none !important;
 }
-.post-content code {
-  margin-right: 3px !important;
-}
 body {
   background-color: #fff;
   color: #51525d;
   font-weight: 400;
   font-size: 14px;
-  font-family: 'Zpix', 'Menlo', 'Meslo LG', monospace;
+  font-family: 'Zpix', serif;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   transition: background-color 0.6s;
@@ -117,9 +114,10 @@ a:hover {
   color: #6d9ee7;
 }
 .logot {
+  font-family: 'Zpix', serif;
   font-weight: bold;
-  font-size: 24px;
-  margin-top: -10px;
+  font-size: 25px;
+  margin-top: -8px;
   margin-bottom: -20px;
 }
 .logot a {
@@ -171,9 +169,11 @@ hr {
 }
 .posts .post-title {
   text-align: center;
-  font-size: 22px;
+  font-family: 'Zpix', serif;
+  font-weight: 400;
+  font-size: 24px;
   line-height: 1.2;
-  margin-bottom: 10px;
+  margin: 1em 0;
 }
 .posts .outdated-notify {
   display: none;
@@ -181,7 +181,8 @@ hr {
   margin: 20px 0;
   color: #333;
   background: #ffec6f;
-  font-size: 18px;
+  font-family: 'Zpix', serif;
+  font-size: 12px;
 }
 .posts .post-content a {
   color: #699be9;
@@ -828,7 +829,6 @@ hr {
 .post-content code {
   background-color: #28559c;
   border-radius: 3px;
-  font-size: 85%;
   margin: 0;
   padding: 0.2em 0.4em;
   color: #fff;
@@ -1374,6 +1374,56 @@ label.el-checkbox {
 .about-avatar:active {
   background-position: -340px 0;
 }
+.back-to-top {
+  position: fixed;
+  z-index: 2;
+  right: -108px;
+  bottom: 0;
+  width: 108px;
+  height: 150px;
+  background: url("../img/back-to-top.png?v=1") no-repeat 0 0;
+  background-size: 108px 450px;
+  opacity: 0.6;
+  transition: opacity 0.3s, right 0.8s;
+}
+.back-to-top:hover {
+  background-position: 0 -150px;
+  opacity: 1;
+}
+.back-to-top.load {
+  right: 0;
+}
+.back-to-top.ani-leave {
+  background-position: 0 -150px;
+  animation: ani-leave 390ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.back-to-top.leaved {
+  pointer-events: none;
+  background: none;
+  transition: none;
+}
+.back-to-top.ending {
+  pointer-events: none;
+}
+.back-to-top.ending::after {
+  opacity: 1;
+}
+.back-to-top::after {
+  content: '';
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  width: 108px;
+  height: 150px;
+  background: url("../img/back-to-top.png?v=1") no-repeat 0 0;
+  background-size: 108px 450px;
+  background-position: 0 -300px;
+  transition: opacity 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
 #Snow {
   position: fixed;
   top: 0;
@@ -1383,6 +1433,10 @@ label.el-checkbox {
   z-index: 999;
   background: rgba(125,137,95,0.1);
   pointer-events: none;
+}
+.site-name ruby rt,
+.site-name ruby rp {
+  font-size: 10px;
 }
 @media screen and (max-width: 800px) {
   .hd {
@@ -1414,5 +1468,37 @@ label.el-checkbox {
   }
   footer {
     font-size: 12px;
+  }
+}
+@-moz-keyframes ani-leave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(108px);
+  }
+}
+@-webkit-keyframes ani-leave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(108px);
+  }
+}
+@-o-keyframes ani-leave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(108px);
+  }
+}
+@keyframes ani-leave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(108px);
   }
 }
